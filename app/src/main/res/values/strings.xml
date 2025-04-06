@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">School</string>
+    <string-array name="cities">
+        <item>Marrakech</item>
+        <item>Rabat</item>
+        <item>Salé</item>
+        <item>Essaouira</item>
+        <item>Casablanca</item>
+    </string-array>
+</resources>

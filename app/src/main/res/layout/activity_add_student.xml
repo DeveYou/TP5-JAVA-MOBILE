@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudentActivity"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/alumni"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/gray"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/load_image"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:text="Load student image"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_background"
+                    android:backgroundTint="@color/yello_01"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:labelFor="@id/first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First name"/>
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <TextView
+                android:labelFor="@id/last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last name"/>
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"/>
+            <Spinner
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"/>
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layout_weight="0.5"/>
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_weight="0.5"/>
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of birth"/>
+            <DatePicker
+                android:id="@+id/date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_student"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="ADD STUDENT"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_background"
+                android:backgroundTint="@color/yello_01"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
